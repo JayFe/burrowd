@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListOverviewFragment">
+
+    <fragment
+        android:id="@+id/ListOverviewFragment"
+        android:name="com.jayfemagic.burrowd.ListOverviewFragment"
+        android:label="@string/list_overview"
+        tools:layout="@layout/fragment_item_overview">
+
+        <action
+            android:id="@+id/action_ListFragment_to_ListItemFragment"
+            app:destination="@id/L" />
+    </fragment>
+    <fragment
+        android:name="com.jayfemagic.burrowd.AddItemFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_addItem">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>
