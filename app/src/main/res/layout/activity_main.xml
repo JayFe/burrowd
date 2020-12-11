@@ -35,7 +35,7 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.jayfemagic.burrowd.ListOverviewFragment"
+        class="com.jayfemagic.burrowd.ListOverview"
         android:id="@+id/fragment2"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
